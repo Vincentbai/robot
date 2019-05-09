@@ -17,8 +17,6 @@ public class CommandFactoryTest extends TestCase {
 	@Test
 	public void testGetCommandArray() throws CommandWrongException {
 		
-		
-		
 		String[] testString = {"MOVE","LEFT","RIGHT","REPORT","STOP"};
 	    
 		assertEquals("[MOVE, LEFT, RIGHT, REPORT, STOP]", cf.getCommandArray(testString).toString());

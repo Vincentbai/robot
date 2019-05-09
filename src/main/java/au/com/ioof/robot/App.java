@@ -37,7 +37,7 @@ public class App {
 	    		
 	    		Matcher matcherPlaceCmd = patternPlaceCmd.matcher(commandString);
 	    		
-	    		//if the commandString starts with PLACE
+	    		// if the commandString starts with PLACE
 	    		if(matcherPlaceCmd.find()){
 	    			
 	    			int initX = Integer.parseInt(matcherPlaceCmd.group(1));
@@ -57,10 +57,11 @@ public class App {
 	    				continue;
 	    			}
 	    		}
-	    	
+	    		
+	    		// parse the command from commandString
 	    		Matcher matcherOtherCmd = patternOtherCmd.matcher(commandString);
 	    		
-	    		if(matcherOtherCmd.matches() && robot!=null){
+	    		if(matcherOtherCmd.find() && robot!=null){
 	    			
 	    			String[] cmdStringArray = commandString.split(" ");
 	    			

@@ -10,8 +10,8 @@ public class CommandFactory {
 		
 		ArrayList<Command> cmdQueue = new ArrayList<Command>();
 		
-		for(int i=0;i<commandStringArray.length;i++){
-			cmdQueue.add(this.createCommand(commandStringArray[i]));
+		for(String commandString: commandStringArray){
+			cmdQueue.add(this.createCommand(commandString));
 		}
 		
 		return cmdQueue;
